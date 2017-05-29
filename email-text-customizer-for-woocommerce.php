@@ -28,8 +28,8 @@ class WETC {
 		/** WC Email Classes Modifier */
 		add_filter( 'woocommerce_email_classes', array( $this, 'WCEmailClassesModifier' ) );
 
-		/** Copy WC Email Modified Templates */
-		add_action( 'init', array( $this, 'WCEmailTemplateCopier' ) );
+		/** Copy WC Email Modified Templates on Activation */
+		register_activation_hook( __FILE__, array( $this, 'WCEmailTemplateCopier' ) );
 
 	}
 
