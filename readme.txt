@@ -54,6 +54,9 @@ Absolutely! Please create a pull request on [GitHub here.](https://github.com/En
 
 == Changelog ==
 
+= 1.0.2 =
+* Fixing email panel bug
+
 = 1.0.1 =
 * Fix duplicate email issue
 * Only copy email templates on plugin activation
