@@ -87,6 +87,18 @@ class WETC {
 	 */
 	public function WCEmailClassesModifier( $email_classes ) {
 
+		require ('assets/class-wc-email-new-order.php');
+		require ('assets/class-wc-email-cancelled-order.php');
+		require ('assets/class-wc-email-failed-order.php');
+		require ('assets/class-wc-email-customer-on-hold-order.php');
+		require ('assets/class-wc-email-customer-processing-order.php');
+		require ('assets/class-wc-email-customer-completed-order.php');
+		require ('assets/class-wc-email-customer-refunded-order.php');
+		require ('assets/class-wc-email-customer-invoice.php');
+		require ('assets/class-wc-email-customer-note.php');
+		require ('assets/class-wc-email-customer-reset-password.php');
+		require ('assets/class-wc-email-customer-new-account.php');
+
 		$email_classes['WC_Email_New_Order']                 = include ('assets/class-wc-email-new-order.php');
 		$email_classes['WC_Email_Cancelled_Order']           = include ('assets/class-wc-email-cancelled-order.php');
 		$email_classes['WC_Email_Failed_Order']              = include ('assets/class-wc-email-failed-order.php');
