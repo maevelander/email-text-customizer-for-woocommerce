@@ -28,6 +28,10 @@ class WETCNewOrder extends WC_Email_New_Order {
 
 	}
 
+	public function trigger($order_id, $order = false) {
+		return false;
+	}
+
 }
 
 
@@ -48,6 +52,10 @@ class WETCCancelledOrder extends WC_Email_Cancelled_Order {
 			'desc_tip'    => true
 		);
 
+	}
+
+	public function trigger($order_id, $order = false) {
+		return false;
 	}
 
 }
@@ -71,6 +79,10 @@ class WETCFailedOrder extends WC_Email_Failed_Order {
 
 	}
 
+	public function trigger($order_id, $order = false) {
+		return false;
+	}
+
 }
 
 /**
@@ -90,6 +102,10 @@ class WETCOrderOnHold extends WC_Email_Customer_On_Hold_Order {
 			'desc_tip'    => true
 		);
 
+	}
+
+	public function trigger($order_id, $order = false) {
+		return false;
 	}
 
 }
@@ -114,6 +130,10 @@ class WETCProcessingOrder extends WC_Email_Customer_Processing_Order {
 
 	}
 
+	public function trigger($order_id, $order = false) {
+		return false;
+	}
+
 }
 
 
@@ -134,6 +154,10 @@ class WETCCompletedOrder extends WC_Email_Customer_Completed_Order {
 			'desc_tip'    => true
 		);
 
+	}
+
+	public function trigger($order_id, $order = false) {
+		return false;
 	}
 
 }
@@ -158,6 +182,10 @@ class WETCRefundedOrder extends WC_Email_Customer_Refunded_Order {
 
 	}
 
+	public function trigger($order_id, $partial_refund = false, $refund_id = null) {
+		return false;
+	}
+
 }
 
 
@@ -180,6 +208,10 @@ class WETCInvoice extends WC_Email_Customer_Invoice {
 
 	}
 
+	public function trigger($order_id, $order = false) {
+		return false;
+	}
+
 }
 
 
@@ -200,6 +232,10 @@ class WETCNote extends WC_Email_Customer_Note {
 			'desc_tip'    => true
 		);
 
+	}
+
+	public function trigger($order_id, $order = false) {
+		return false;
 	}
 
 }
@@ -233,6 +269,10 @@ To reset your password, visit the following address:
 
 	}
 
+	public function trigger($user_login = '', $reset_key = '') {
+		return false;
+	}
+
 }
 
 
@@ -253,6 +293,10 @@ class WETCNewAccount extends WC_Email_Customer_New_Account {
 			'desc_tip'    => true
 		);
 
+	}
+
+	public function trigger($user_id, $user_pass = '', $password_generated = false) {
+		return false;
 	}
 
 }
