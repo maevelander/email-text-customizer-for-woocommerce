@@ -54,6 +54,9 @@ Absolutely! Please create a pull request on [GitHub here.](https://github.com/En
 
 == Changelog ==
 
+= 1.0.3 =
+* Reset password link's color issue fixed
+
 = 1.0.2 =
 * Fixing email panel bug
 

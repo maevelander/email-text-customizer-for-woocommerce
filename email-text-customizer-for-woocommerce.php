@@ -6,7 +6,7 @@
  * Description: Allows you to customize the text of all WooCommerce emails without having to delve into template code.
  * Author: EnigmaWeb
  * Author URI: https://www.enigmaweb.com.au
- * Version: 1.0.2
+ * Version: 1.0.3
  * Text Domain: woo-email-text-customizer
  */
 
